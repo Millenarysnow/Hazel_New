@@ -8,3 +8,5 @@
 	#endif // HZ_BUILD_DLL
 
 #endif // HZ_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

@@ -26,7 +26,8 @@ project "Hazel"
 
 	includedirs -- 包含文件目录
 	{
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{prj.name}/src"
 	}
 
 	-- buildoptions "/utf-8"

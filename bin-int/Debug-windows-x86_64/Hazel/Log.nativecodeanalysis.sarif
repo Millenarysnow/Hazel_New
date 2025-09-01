@@ -1,0 +1,1753 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "未初始化变量 fmt::v11::writer::file_。始终初始化成员变量(type.6)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 900,
+                  "startColumn": 3,
+                  "endLine": 900,
+                  "endColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0writer@v11@fmt@@QEAA@AEAV?$buffer@D@detail@12@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "targetSymbol": "fmt::v11::writer::file_"
+          }
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "枚举类型“spdlog::level::level_enum”未设定范围。相比于 \"enum\"，首选 \"enum class\" (Enum.3)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/common-inl.h"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 36,
+                  "endLine": 23,
+                  "endColumn": 36
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?to_string_view@level@spdlog@@YAAEBV?$basic_string_view@D@v11@fmt@@W4level_enum@12@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/base.h"
+                },
+                "region": {
+                  "startLine": 1312,
+                  "startColumn": 24,
+                  "endLine": 1312,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$parse_nonnegative_int@D@detail@v11@fmt@@YAHAEAPEBDPEBDH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 - ，然后将结果转换到 8 字节值。在调用运算符 - 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/base.h"
+                },
+                "region": {
+                  "startLine": 1313,
+                  "startColumn": 42,
+                  "endLine": 1313,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$parse_nonnegative_int@D@detail@v11@fmt@@YAHAEAPEBDPEBDH@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6294",
+          "message": {
+            "text": "for 循环定义错误: 初始条件不满足测试。 循环体未执行。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/base.h"
+                },
+                "region": {
+                  "startLine": 1711,
+                  "startColumn": 5,
+                  "endLine": 1711,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?on_arg_id@?$format_string_checker@D$02$0A@$0A@@detail@v11@fmt@@QEAAHV?$basic_string_view@D@34@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6294",
+          "message": {
+            "text": "for 循环定义错误: 初始条件不满足测试。 循环体未执行。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/base.h"
+                },
+                "region": {
+                  "startLine": 1711,
+                  "startColumn": 5,
+                  "endLine": 1711,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?on_arg_id@?$format_string_checker@D$00$0A@$0A@@detail@v11@fmt@@QEAAHV?$basic_string_view@D@34@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6294",
+          "message": {
+            "text": "for 循环定义错误: 初始条件不满足测试。 循环体未执行。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/base.h"
+                },
+                "region": {
+                  "startLine": 1711,
+                  "startColumn": 5,
+                  "endLine": 1711,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?on_arg_id@?$format_string_checker@D$01$0A@$0A@@detail@v11@fmt@@QEAAHV?$basic_string_view@D@34@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函数 fmt::v11::detail::num_bits<unsigned __int64> 是 constexpr，如果需要编译时计算，请将变量 shift 标记为 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2568,
+                  "startColumn": 15,
+                  "endLine": 2568,
+                  "endColumn": 47
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$multiply@Vuint128_fallback@detail@v11@fmt@@$0A@@bigint@detail@v11@fmt@@AEAAXVuint128_fallback@123@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6294",
+          "message": {
+            "text": "for 循环定义错误: 初始条件不满足测试。 循环体未执行。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/base.h"
+                },
+                "region": {
+                  "startLine": 1711,
+                  "startColumn": 5,
+                  "endLine": 1711,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?on_arg_id@?$format_string_checker@D$0A@$0A@$0A@@detail@v11@fmt@@QEAAHV?$basic_string_view@D@34@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函数 fmt::v11::detail::exponent_mask<float> 是 constexpr，如果需要编译时计算，请将变量 mask 标记为 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 3374,
+                  "startColumn": 15,
+                  "endLine": 3374,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$write@DV?$basic_appender@D@v11@fmt@@M$0A@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@M@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函数 fmt::v11::detail::exponent_mask<double> 是 constexpr，如果需要编译时计算，请将变量 mask 标记为 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 3374,
+                  "startColumn": 15,
+                  "endLine": 3374,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$write@DV?$basic_appender@D@v11@fmt@@N$0A@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函数 fmt::v11::detail::exponent_mask<double> 是 constexpr，如果需要编译时计算，请将变量 mask 标记为 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 3374,
+                  "startColumn": 15,
+                  "endLine": 3374,
+                  "endColumn": 43
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$write@DV?$basic_appender@D@v11@fmt@@O$0A@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@O@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函数 fmt::v11::detail::num_significand_bits<float> 是 constexpr，如果需要编译时计算，请将变量 significand_mask 标记为 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format-inl.h"
+                },
+                "region": {
+                  "startLine": 1267,
+                  "startColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$to_decimal@M@dragonbox@detail@v11@fmt@@YA?AU?$decimal_fp@M@0123@M@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函数 fmt::v11::detail::num_significand_bits<double> 是 constexpr，如果需要编译时计算，请将变量 significand_mask 标记为 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format-inl.h"
+                },
+                "region": {
+                  "startLine": 1267,
+                  "startColumn": 22
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$to_decimal@N@dragonbox@detail@v11@fmt@@YA?AU?$decimal_fp@N@0123@N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2339,
+                  "startColumn": 17,
+                  "endLine": 2339,
+                  "endColumn": 72
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@M@dragonbox@detail@23@V?$fallback_digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@M@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2409,
+                  "startColumn": 13,
+                  "endLine": 2409,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@M@dragonbox@detail@23@V?$fallback_digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@M@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2426,
+                  "startColumn": 11,
+                  "endLine": 2426,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@M@dragonbox@detail@23@V?$fallback_digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@M@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2426,
+                  "startColumn": 11,
+                  "endLine": 2426,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@M@dragonbox@detail@23@V?$fallback_digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@M@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2339,
+                  "startColumn": 17,
+                  "endLine": 2339,
+                  "endColumn": 72
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@M@dragonbox@detail@23@V?$digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@M@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2409,
+                  "startColumn": 13,
+                  "endLine": 2409,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@M@dragonbox@detail@23@V?$digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@M@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2426,
+                  "startColumn": 11,
+                  "endLine": 2426,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@M@dragonbox@detail@23@V?$digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@M@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2426,
+                  "startColumn": 11,
+                  "endLine": 2426,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@M@dragonbox@detail@23@V?$digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@M@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2339,
+                  "startColumn": 17,
+                  "endLine": 2339,
+                  "endColumn": 72
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@N@dragonbox@detail@23@V?$fallback_digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@N@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2409,
+                  "startColumn": 13,
+                  "endLine": 2409,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@N@dragonbox@detail@23@V?$fallback_digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@N@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2426,
+                  "startColumn": 11,
+                  "endLine": 2426,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@N@dragonbox@detail@23@V?$fallback_digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@N@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2426,
+                  "startColumn": 11,
+                  "endLine": 2426,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@N@dragonbox@detail@23@V?$fallback_digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@N@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2339,
+                  "startColumn": 17,
+                  "endLine": 2339,
+                  "endColumn": 72
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@N@dragonbox@detail@23@V?$digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@N@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2409,
+                  "startColumn": 13,
+                  "endLine": 2409,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@N@dragonbox@detail@23@V?$digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@N@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2426,
+                  "startColumn": 11,
+                  "endLine": 2426,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@N@dragonbox@detail@23@V?$digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@N@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2426,
+                  "startColumn": 11,
+                  "endLine": 2426,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@U?$decimal_fp@N@dragonbox@detail@23@V?$digit_grouping@D@623@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBU?$decimal_fp@N@dragonbox@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2064,
+                  "startColumn": 28,
+                  "endLine": 2064,
+                  "endColumn": 65
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$write_int@DV?$basic_appender@D@v11@fmt@@I@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@U?$write_int_arg@I@012@AEBUformat_specs@12@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函数 fmt::v11::detail::num_significand_bits<double> 是 constexpr，如果需要编译时计算，请将变量 num_float_significand_bits 标记为 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2908,
+                  "startColumn": 14,
+                  "endLine": 2908,
+                  "endColumn": 78
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$format_hexfloat@N$0A@@detail@v11@fmt@@YAXNUformat_specs@12@AEAV?$buffer@D@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函数 fmt::v11::detail::num_significand_bits<double> 是 constexpr，如果需要编译时计算，请将变量 significand_mask 标记为 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 3032,
+                  "startColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$format_float@N@detail@v11@fmt@@YAHNHAEBUformat_specs@12@_NAEAV?$buffer@D@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 - ，然后将结果转换到 8 字节值。在调用运算符 - 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 3023,
+                  "startColumn": 15,
+                  "endLine": 3023,
+                  "endColumn": 44
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$format_float@N@detail@v11@fmt@@YAHNHAEBUformat_specs@12@_NAEAV?$buffer@D@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 3023,
+                  "startColumn": 15,
+                  "endLine": 3023,
+                  "endColumn": 38
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$format_float@N@detail@v11@fmt@@YAHNHAEBUformat_specs@12@_NAEAV?$buffer@D@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2272,
+                  "startColumn": 10,
+                  "endLine": 2272,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$write_significand@DI$0A@@detail@v11@fmt@@YAPEADPEADIHHD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2272,
+                  "startColumn": 10,
+                  "endLine": 2272,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$write_significand@D_K$0A@@detail@v11@fmt@@YAPEADPEAD_KHHD@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 - ，然后将结果转换到 8 字节值。在调用运算符 - 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 1228,
+                  "startColumn": 54,
+                  "endLine": 1228,
+                  "endColumn": 72
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_format_base2e@D_K@detail@v11@fmt@@YAPEADHPEAD_KH_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 << ，然后将结果转换到 8 字节值。在调用运算符 << 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 1228,
+                  "startColumn": 54,
+                  "endLine": 1228,
+                  "endColumn": 59
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_format_base2e@D_K@detail@v11@fmt@@YAPEADHPEAD_KH_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函数 fmt::v11::detail::num_significand_bits<float> 是 constexpr，如果需要编译时计算，请将变量 num_float_significand_bits 标记为 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 1537,
+                  "startColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$assign@M$0A@@?$basic_fp@Vuint128_fallback@detail@v11@fmt@@@detail@v11@fmt@@QEAA_NM@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函数 fmt::v11::detail::num_significand_bits<double> 是 constexpr，如果需要编译时计算，请将变量 num_float_significand_bits 标记为 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 1537,
+                  "startColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$assign@N$0A@@?$basic_fp@Vuint128_fallback@detail@v11@fmt@@@detail@v11@fmt@@QEAA_NN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2339,
+                  "startColumn": 17,
+                  "endLine": 2339,
+                  "endColumn": 72
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@Ubig_decimal_fp@detail@23@V?$fallback_digit_grouping@D@523@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBUbig_decimal_fp@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2409,
+                  "startColumn": 13,
+                  "endLine": 2409,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@Ubig_decimal_fp@detail@23@V?$fallback_digit_grouping@D@523@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBUbig_decimal_fp@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2426,
+                  "startColumn": 11,
+                  "endLine": 2426,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@Ubig_decimal_fp@detail@23@V?$fallback_digit_grouping@D@523@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBUbig_decimal_fp@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2426,
+                  "startColumn": 11,
+                  "endLine": 2426,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@Ubig_decimal_fp@detail@23@V?$fallback_digit_grouping@D@523@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBUbig_decimal_fp@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2339,
+                  "startColumn": 17,
+                  "endLine": 2339,
+                  "endColumn": 72
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@Ubig_decimal_fp@detail@23@V?$digit_grouping@D@523@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBUbig_decimal_fp@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2409,
+                  "startColumn": 13,
+                  "endLine": 2409,
+                  "endColumn": 57
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@Ubig_decimal_fp@detail@23@V?$digit_grouping@D@523@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBUbig_decimal_fp@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2426,
+                  "startColumn": 11,
+                  "endLine": 2426,
+                  "endColumn": 46
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@Ubig_decimal_fp@detail@23@V?$digit_grouping@D@523@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBUbig_decimal_fp@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2426,
+                  "startColumn": 11,
+                  "endLine": 2426,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$do_write_float@DV?$basic_appender@D@v11@fmt@@Ubig_decimal_fp@detail@23@V?$digit_grouping@D@523@@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@AEBUbig_decimal_fp@012@AEBUformat_specs@12@W4sign@12@HVlocale_ref@012@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26451",
+          "message": {
+            "text": "算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 2064,
+                  "startColumn": 28,
+                  "endLine": 2064,
+                  "endColumn": 65
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$write_int@DV?$basic_appender@D@v11@fmt@@_K@detail@v11@fmt@@YA?AV?$basic_appender@D@12@V312@U?$write_int_arg@_K@012@AEBUformat_specs@12@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C26498",
+          "message": {
+            "text": "函数 fmt::v11::detail::num_significand_bits<double> 是 constexpr，如果需要编译时计算，请将变量 num_float_significand_bits 标记为 constexpr (con.5)。"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+                },
+                "region": {
+                  "startLine": 1537,
+                  "startColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??$assign@N$0A@@?$basic_fp@_K@detail@v11@fmt@@QEAA_NN@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.29.30159.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "F:\\VS2019\\Main\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x64\\c1xx.dll -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x00BEC1B0 -il C:\\Users\\MILLEN~1\\AppData\\Local\\Temp\\_CL_de0804cbast -typedil -f src\\Hazel\\Log.cpp -Ze -D_MSC_EXTENSIONS -Zp16 -pc \\:/ -D_MSC_VER=1929 -D_MSC_FULL_VER=192930159 -D_MSC_BUILD=0 -D_M_AMD64=100 -ZILP448 -D_M_X64=100 -D_WIN64 -D_WIN32 -GR -D_CPPRTTI -I E:\\CppProgram\\Hazel\\Hazel\\vendor\\spdlog\\include -nologo -W 3 -diagnostics:column -Ot -DCODE_ANALYSIS -DHZ_PLATFORM_WINDOWS -DHZ_BUILD_DLL -DHZ_DEBUG -D_WINDLL -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MTd -clrNoPureCRT -D_DEBUG -D_MT -GS -D_M_FP_PRECISE -Zc:wchar_t -Zc:forScope -std:c++17 -FoE:\\CppProgram\\Hazel\\Hazel\\..\\bin-int\\Debug-windows-x86_64\\Hazel\\Log.obj -FdE:\\CppProgram\\Hazel\\Hazel\\..\\bin-int\\Debug-windows-x86_64\\Hazel\\vc142.pdb -external:W 3 -Gd -analyze:projectdirectory E:\\CppProgram\\Hazel\\Hazel -analyze:rulesetdirectory ;F:\\VS2019\\Main\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset F:\\VS2019\\Main\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin F:\\VS2019\\Main\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I F:\\VS2019\\Main\\VC\\Tools\\MSVC\\14.29.30133\\include -I F:\\VS2019\\Main\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I F:\\VS2019\\Main\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt -I F:\\VS2019\\Main\\VC\\Auxiliary\\VS\\UnitTest\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -external:I F:\\VS2019\\Main\\VC\\Tools\\MSVC\\14.29.30133\\include -I F:\\VS2019\\Main\\VC\\Tools\\MSVC\\14.29.30133\\include -external:I F:\\VS2019\\Main\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -I F:\\VS2019\\Main\\VC\\Tools\\MSVC\\14.29.30133\\atlmfc\\include -external:I F:\\VS2019\\Main\\VC\\Auxiliary\\VS\\include -I F:\\VS2019\\Main\\VC\\Auxiliary\\VS\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt -external:I F:\\VS2019\\Main\\VC\\Auxiliary\\VS\\UnitTest\\include -I F:\\VS2019\\Main\\VC\\Auxiliary\\VS\\UnitTest\\include -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\winrt -external:I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\cppwinrt -external:I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "63b1f2b51de46c8e50ee9417b26b77fe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/common-inl.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "29f7b61f7b0b4736e126deb998626ac9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/base.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "0508ee5a3e80b24e36f6d3f15ae0714d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///E:/CppProgram/Hazel/Hazel/vendor/spdlog/include/spdlog/fmt/bundled/format-inl.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "55d99e20b3924b501a71b7c53c940ba0"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/src/hazel/log.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "61e3e701406d2bd837d9d3e138b580cb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/src/hazel/log.h"
+          },
+          "hashes": {
+            "md5": "2e5443463acefcf27af87c95e31cb9ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/src/hazel/core.h"
+          },
+          "hashes": {
+            "md5": "3018c2e0b929e0187d1faf752fd6296f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/spdlog.h"
+          },
+          "hashes": {
+            "md5": "8ad7fe433718130b86cc3e2353bbefbf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/common.h"
+          },
+          "hashes": {
+            "md5": "deff788ca05a002567bd884dcffd66e6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/null_mutex.h"
+          },
+          "hashes": {
+            "md5": "aa5f576720f082903ec1148540e47dc4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/tweakme.h"
+          },
+          "hashes": {
+            "md5": "d0676f3f876fef65191b0157a055dc60"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/fmt/fmt.h"
+          },
+          "hashes": {
+            "md5": "e38da7ecd17b4025ab28633c081220eb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/registry.h"
+          },
+          "hashes": {
+            "md5": "f3ed4e1606ab571bdb457224916b4a2e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/periodic_worker.h"
+          },
+          "hashes": {
+            "md5": "526e477b032742969c8073fb59a14c62"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/periodic_worker-inl.h"
+          },
+          "hashes": {
+            "md5": "6cafa4001756c6762a8e2c71d07d8d1e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/registry-inl.h"
+          },
+          "hashes": {
+            "md5": "ab0ed84161d58a8cfb52020071038dda"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/logger.h"
+          },
+          "hashes": {
+            "md5": "4ad8f8cb68315001ca4759abc935343e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/backtracer.h"
+          },
+          "hashes": {
+            "md5": "f088d685581a0ff42283d06b8dbb551a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/circular_q.h"
+          },
+          "hashes": {
+            "md5": "9077594c18965d9ca3f77b002586a531"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/log_msg_buffer.h"
+          },
+          "hashes": {
+            "md5": "0bc14f997a2053a1b3a97b27c8ac8f65"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/log_msg.h"
+          },
+          "hashes": {
+            "md5": "f59d55fc85bb4047a4bcd6f3e0a8a0db"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/log_msg-inl.h"
+          },
+          "hashes": {
+            "md5": "b02f0d4a44622895f9b54e2be5afc870"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/os.h"
+          },
+          "hashes": {
+            "md5": "31b0e58db23df77a490fa01eaff71b65"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/os-inl.h"
+          },
+          "hashes": {
+            "md5": "a4d9de720ced36d59617b34af0d53223"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/windows_include.h"
+          },
+          "hashes": {
+            "md5": "205690460df30c1a4f4ec9a5a174c54e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/log_msg_buffer-inl.h"
+          },
+          "hashes": {
+            "md5": "ed414aa50993a1b7935b07c59e15858c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/backtracer-inl.h"
+          },
+          "hashes": {
+            "md5": "8ea7977267224b79f90977662a10ef57"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/logger-inl.h"
+          },
+          "hashes": {
+            "md5": "14a803759c3871b9c855a0ce00854024"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/pattern_formatter.h"
+          },
+          "hashes": {
+            "md5": "211742a8fdec220772ec3684111c6a06"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/formatter.h"
+          },
+          "hashes": {
+            "md5": "dc270efc87b84c326fcec60551e3cd0a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/pattern_formatter-inl.h"
+          },
+          "hashes": {
+            "md5": "a9a6d03588c8973ca53e8ecfdedd0c32"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/fmt_helper.h"
+          },
+          "hashes": {
+            "md5": "b8b529502fc8acf88961c4972efbee3c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/mdc.h"
+          },
+          "hashes": {
+            "md5": "997ca9954302abe1ef1f5f6011993086"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/sinks/sink.h"
+          },
+          "hashes": {
+            "md5": "80b8f496c3246145da75b1da0af7506f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/sinks/sink-inl.h"
+          },
+          "hashes": {
+            "md5": "d51a41c55272edfb722271fe6412a7ab"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/sinks/wincolor_sink.h"
+          },
+          "hashes": {
+            "md5": "5b56b51eacb9377d73e39829bc4cb53b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/console_globals.h"
+          },
+          "hashes": {
+            "md5": "0db367b0bee661797aee4466c4d157af"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/sinks/wincolor_sink-inl.h"
+          },
+          "hashes": {
+            "md5": "02b231527dd2afca12a9de5ee58412f4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/details/synchronous_factory.h"
+          },
+          "hashes": {
+            "md5": "8280acd9759101ca2bce7d378b5c8583"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/version.h"
+          },
+          "hashes": {
+            "md5": "71db2c4021e042489bc24b93f056e5cb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/spdlog-inl.h"
+          },
+          "hashes": {
+            "md5": "6d527c4d5e8645c350ffee8a744387a3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/sinks/stdout_color_sinks.h"
+          },
+          "hashes": {
+            "md5": "b800ff95d15c3ba6e6d0bd2a0210fd68"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///e:/cppprogram/hazel/hazel/vendor/spdlog/include/spdlog/sinks/stdout_color_sinks-inl.h"
+          },
+          "hashes": {
+            "md5": "1c302da957f16ed74630c25c54b62c52"
+          }
+        }
+      ]
+    }
+  ]
+}

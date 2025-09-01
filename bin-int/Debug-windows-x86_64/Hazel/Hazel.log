@@ -1,1 +1,31 @@
-﻿  Hazel.vcxproj -> E:\CppProgram\Hazel\bin\Debug-windows-x86_64\Hazel\Hazel.dll
+﻿  Application.cpp
+  Log.cpp
+E:\CppProgram\Hazel\Hazel\src\Hazel\Log.h(18,42): warning C4251: “Hazel::Log::s_CoreLogger”: class“std::shared_ptr<spdlog::logger>”需要有 dll 接口由 class“Hazel::Log”的客户端使用
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\details\registry.h(33): message : 参见“std::shared_ptr<spdlog::logger>”的声明
+E:\CppProgram\Hazel\Hazel\src\Hazel\Log.h(19,42): warning C4251: “Hazel::Log::s_ClientLogger”: class“std::shared_ptr<spdlog::logger>”需要有 dll 接口由 class“Hazel::Log”的客户端使用
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\details\registry.h(33): message : 参见“std::shared_ptr<spdlog::logger>”的声明
+  正在运行 C/C++ 代码分析...
+  正在生成代码...
+    正在创建库 ..\bin\Debug-windows-x86_64\Hazel\Hazel.lib 和对象 ..\bin\Debug-windows-x86_64\Hazel\Hazel.exp
+  Hazel.vcxproj -> E:\CppProgram\Hazel\bin\Debug-windows-x86_64\Hazel\Hazel.dll
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(900): warning C26495: 未初始化变量 fmt::v11::writer::file_。始终初始化成员变量(type.6)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\common-inl.h(23): warning C26812: 枚举类型“spdlog::level::level_enum”未设定范围。相比于 "enum"，首选 "enum class" (Enum.3)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\base.h(1312): warning C26451: 算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\base.h(1313): warning C26451: 算术溢出: 使用 4 字节值上的运算符 - ，然后将结果转换到 8 字节值。在调用运算符 - 之前将值强制转换为宽类型可避免溢出(io.2)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\base.h(1711): warning C6294: for 循环定义错误: 初始条件不满足测试。 循环体未执行。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(2568): warning C26498: 函数 fmt::v11::detail::num_bits<unsigned __int64> 是 constexpr，如果需要编译时计算，请将变量 shift 标记为 constexpr (con.5)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(3374): warning C26498: 函数 fmt::v11::detail::exponent_mask<float> 是 constexpr，如果需要编译时计算，请将变量 mask 标记为 constexpr (con.5)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format-inl.h(1267): warning C26498: 函数 fmt::v11::detail::num_significand_bits<float> 是 constexpr，如果需要编译时计算，请将变量 significand_mask 标记为 constexpr (con.5)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(2339): warning C26451: 算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(2409): warning C26451: 算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(2426): warning C26451: 算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(2426): warning C26451: 算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(2064): warning C26451: 算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(2908): warning C26498: 函数 fmt::v11::detail::num_significand_bits<double> 是 constexpr，如果需要编译时计算，请将变量 num_float_significand_bits 标记为 constexpr (con.5)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(3032): warning C26498: 函数 fmt::v11::detail::num_significand_bits<double> 是 constexpr，如果需要编译时计算，请将变量 significand_mask 标记为 constexpr (con.5)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(3023): warning C26451: 算术溢出: 使用 4 字节值上的运算符 - ，然后将结果转换到 8 字节值。在调用运算符 - 之前将值强制转换为宽类型可避免溢出(io.2)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(3023): warning C26451: 算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(2272): warning C26451: 算术溢出: 使用 4 字节值上的运算符 + ，然后将结果转换到 8 字节值。在调用运算符 + 之前将值强制转换为宽类型可避免溢出(io.2)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(1228): warning C26451: 算术溢出: 使用 4 字节值上的运算符 - ，然后将结果转换到 8 字节值。在调用运算符 - 之前将值强制转换为宽类型可避免溢出(io.2)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(1228): warning C26451: 算术溢出: 使用 4 字节值上的运算符 << ，然后将结果转换到 8 字节值。在调用运算符 << 之前将值强制转换为宽类型可避免溢出(io.2)。
+E:\CppProgram\Hazel\Hazel\vendor\spdlog\include\spdlog\fmt\bundled\format.h(1537): warning C26498: 函数 fmt::v11::detail::num_significand_bits<float> 是 constexpr，如果需要编译时计算，请将变量 num_float_significand_bits 标记为 constexpr (con.5)。
