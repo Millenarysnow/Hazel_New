@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Hazel/Core.h"
+#include "spdlog/fmt/ostr.h"
 
 #include <string>
 #include <functional>
@@ -12,7 +13,7 @@ namespace Hazel {
 		None = 0,
 		WindowClose, WindowResize, WindowFocus, WindowLostFocus, WindowMoved,
 		AppTick, AppUpdate, AppRender,
-		KeyPressed, keyReleased,
+		KeyPressed, KeyReleased,
 		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
 	};
 
@@ -34,7 +35,7 @@ namespace Hazel {
 	
 	class HAZEL_API Event
 	{
-		friend class EventDispacher;
+		friend class EventDispatcher;
 	public:
 		virtual EventType GetEventType() const = 0;
 		virtual const char* GetName() const = 0;
@@ -49,5 +50,38 @@ namespace Hazel {
 	protected:
 		bool m_Handled = false; // 是否处理，用于在事件分发向下一层时可以截断分发
 	};
-}
 
+	class EventDispatcher
+	{
+		template<typename T>
+		using EventFn = std::function<bool(T&)>; // 这里的EventFn是一个接收T&作为参数，返回bool的函数
+
+	public:
+		EventDispatcher(Event& event)
+			: m_Event(event) { }
+
+		template<typename T>
+		bool Dispatch(EventFn<T> func)
+		{
+			if (m_Event.GetEventType() == T::GetStaticType())
+			{
+				m_Event.m_Handled = func(*(T*)&m_Event);
+				// 这里func(*(T*)&m_Event)是一个C风格的转换
+				// &m_Event取到地址，类型为Event*，然后强制转换为(T*)的指针
+				// 接着对(T*)类型的指针解引用，得到T&，传给EventFn函数
+				return true;
+			}
+			return false;
+		}
+		
+	private:
+		Event& m_Event;
+	};
+
+	// 重载<<操作符，方便配合spdlog打印输出
+	// inline std::ostream& operator<<(std::ostream& os, const Event& e)
+	// {
+	// 	return os << e.ToString();
+	// }
+	inline std::string format_as(const Event& e) { return e.ToString(); }
+}
