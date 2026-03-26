@@ -1,7 +1,10 @@
 
 .vs/
 .idea/
-.bin-int/
+bin/
+bin-int/
+build-vs2019/
+build/
 
 *.vcxproj
 *.vcxproj.filters

@@ -13,7 +13,7 @@ namespace Hazel {
 		void Run();
 	};
 
-	// ÔÚ¿Í»§¶ËÖÐ¶¨Òå
+	// åœ¨å®¢æˆ·ç«¯ä¸­å®šä¹‰
 	Application* CreateApplication();
 
 }
