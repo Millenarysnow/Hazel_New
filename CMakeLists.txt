@@ -1,15 +1,13 @@
 cmake_minimum_required(VERSION 3.21)
 
-# 如果你机器上确实固定使用这个 Windows SDK，可以保留。
-# 如果你希望换机器更省心，也可以删掉这行，让 VS / CMake 自己选已安装的 SDK。
+# 机器上固定使用这个 Windows SDK
+# 删掉这行让 VS / CMake 自己选已安装的 SDK
 if(WIN32)
     set(CMAKE_SYSTEM_VERSION 10.0.22621.0)
 endif()
 
 project(Hazel LANGUAGES CXX)
 
-# 如果你想在 VS Code 里获得更好的 C++ 工具体验（尤其是 clangd / 现代补全），
-# 推荐配合 Ninja / Ninja Multi-Config 使用这个选项。
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # 支持 Debug / Release / Dist
@@ -44,22 +42,16 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # 对应 Premake 的 staticruntime "On"
 if(MSVC)
     set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
-    # 如果你以后想启用 /utf-8，可以取消下一行注释
     # add_compile_options(/utf-8)
 endif()
 
-# 尽量保持和你现在 Premake 一样的最终输出结构
 set(OUTPUT_ROOT "${CMAKE_SOURCE_DIR}/bin/$<CONFIG>-windows-x64")
 
-# 注意：
-# CMake 官方更推荐手写源文件列表，而不是 GLOB。
-# 但为了和你现在 Premake 的“自动抓取 src 下所有 .h/.cpp”行为保持接近，
-# 这里使用 GLOB_RECURSE + CONFIGURE_DEPENDS。
+# GLOB 抓取所有代码文件
 file(GLOB_RECURSE HAZEL_FILES CONFIGURE_DEPENDS
     "${CMAKE_SOURCE_DIR}/Hazel/src/*.h"
     "${CMAKE_SOURCE_DIR}/Hazel/src/*.cpp"
 )
-
 file(GLOB_RECURSE SANDBOX_FILES CONFIGURE_DEPENDS
     "${CMAKE_SOURCE_DIR}/Sandbox/src/*.h"
     "${CMAKE_SOURCE_DIR}/Sandbox/src/*.cpp"
@@ -117,7 +109,6 @@ set_target_properties(Sandbox PROPERTIES
     ARCHIVE_OUTPUT_DIRECTORY "${OUTPUT_ROOT}/Sandbox"
 )
 
-# 对应 Premake 里的 postbuildcommands：
 # 把 Hazel.dll 复制到 Sandbox 的输出目录
 add_custom_command(TARGET Hazel POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E make_directory "$<TARGET_FILE_DIR:Sandbox>"
@@ -126,5 +117,5 @@ add_custom_command(TARGET Hazel POST_BUILD
             "$<TARGET_FILE_DIR:Sandbox>"
 )
 
-# 如果你用 Visual Studio 生成器，这样打开时默认启动项目是 Sandbox
+# 如果使用 Visual Studio 生成器，这样打开时默认启动项目是 Sandbox
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT Sandbox)
