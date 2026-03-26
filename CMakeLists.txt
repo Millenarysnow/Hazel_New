@@ -68,6 +68,11 @@ target_include_directories(Hazel
         "${CMAKE_SOURCE_DIR}/Hazel/vendor/spdlog/include"
 )
 
+# 预编译头文件（Hazel）
+target_precompile_headers(Hazel PRIVATE 
+    "${CMAKE_SOURCE_DIR}/Hazel/src/hzpch.h"
+)
+
 target_compile_definitions(Hazel
     PRIVATE
         HZ_PLATFORM_WINDOWS

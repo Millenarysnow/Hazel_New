@@ -18,6 +18,9 @@ project "Hazel"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}") -- 目标文件输出目录
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}") -- 临时文件输出目录
 
+	pchheader "hzpch.h" -- 预编译头文件
+	pchsource "Hazel/src/hzpch.cpp" -- 预编译头文件源文件
+
 	files -- 源文件目录
 	{
 		"%{prj.name}/src/**.h",

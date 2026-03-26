@@ -3,9 +3,6 @@
 #include "Hazel/Core.h"
 #include "spdlog/fmt/ostr.h"
 
-#include <string>
-#include <functional>
-
 namespace Hazel {
 
 	enum class EventType // 事件类型
