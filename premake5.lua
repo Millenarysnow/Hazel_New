@@ -30,7 +30,7 @@ project "Hazel"
 		"%{prj.name}/src"
 	}
 
-	-- buildoptions "/utf-8"
+	buildoptions "/utf-8"
 
 	--[[
 		定义过滤器：直到遇到另一个过滤器之前都是该过滤器范围
@@ -43,7 +43,7 @@ project "Hazel"
 	filter "system:windows" -- windows
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.22621.0" -- SDK版本
+		systemversion "latest" -- SDK版本
 
 		defines -- 预定义宏
 		{
@@ -93,12 +93,12 @@ project "Sandbox"
 		"Hazel"
 	}
 
-	-- buildoptions "/utf-8"
+	buildoptions "/utf-8"
 
 	filter "system:windows" -- windows
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.22621.0" -- SDK版本
+		systemversion "latest" -- SDK版本
 
 		defines -- 预定义宏
 		{
