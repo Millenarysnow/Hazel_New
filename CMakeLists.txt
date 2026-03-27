@@ -58,6 +58,14 @@ file(GLOB_RECURSE SANDBOX_FILES CONFIGURE_DEPENDS
 )
 
 # =========================
+# Vendor
+# =========================
+set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
+add_subdirectory(Hazel/vendor/GLFW)
+
+# =========================
 # Hazel (Shared Library)
 # =========================
 add_library(Hazel SHARED ${HAZEL_FILES})
@@ -66,6 +74,12 @@ target_include_directories(Hazel
     PUBLIC
         "${CMAKE_SOURCE_DIR}/Hazel/src"
         "${CMAKE_SOURCE_DIR}/Hazel/vendor/spdlog/include"
+)
+
+target_link_libraries(Hazel
+    PUBLIC
+        glfw
+        opengl32
 )
 
 # 预编译头文件（Hazel）
