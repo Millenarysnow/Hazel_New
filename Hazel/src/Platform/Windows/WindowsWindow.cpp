@@ -1,5 +1,7 @@
 #include "WindowsWindow.h"
 
+#include "Hazel/Log.h"
+
 namespace Hazel {
 
     static bool s_GLFWInitialized = false;
