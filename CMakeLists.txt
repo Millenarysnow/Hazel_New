@@ -42,7 +42,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # 对应 Premake 的 staticruntime "On"
 if(MSVC)
     set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
-    # add_compile_options(/utf-8)
+    add_compile_options(/utf-8) # 使用 UTF-8（spdlog要求）
 endif()
 
 set(OUTPUT_ROOT "${CMAKE_SOURCE_DIR}/bin/$<CONFIG>-windows-x64")
