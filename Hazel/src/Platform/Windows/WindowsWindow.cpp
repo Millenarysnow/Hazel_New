@@ -80,7 +80,7 @@ namespace Hazel {
 
         glfwSetWindowSizeCallback(m_window, [](GLFWwindow* window, int width, int height)
         {
-            WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window); // ?
+            WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window); // 对应前面的设置用户指针
             data.Width = width;
             data.Height = height;
             

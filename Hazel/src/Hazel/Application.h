@@ -4,10 +4,10 @@
 #include "Events/Event.h"
 #include "Window.h"
 
-#include "Hazel/Events/ApplicationEvent.h"
-
-
 namespace Hazel {
+
+	class WindowCloseEvent;
+	
 
 	class HAZEL_API Application
 	{
