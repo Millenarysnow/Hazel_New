@@ -45,8 +45,10 @@ namespace Hazel {
 			return GetCategoryFlags() & category;
 		}
 
+		bool GetHandled() const { return m_Handled; }
+
 	protected:
-		bool m_Handled = false; // 是否处理，用于在事件分发向下一层时可以截断分发
+		bool m_Handled = false; // 是否已经被处理，用于在事件分发向下一层时可以截断分发
 	};
 
 	class EventDispatcher
