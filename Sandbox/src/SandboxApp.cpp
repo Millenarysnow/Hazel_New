@@ -25,7 +25,7 @@ public:
 		PushLayer(new ExampleLayer());
 	}
 	
-	~Sandbox() { }
+	~Sandbox() override { }
 };
 
 Hazel::Application* Hazel::CreateApplication()
