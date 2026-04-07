@@ -66,6 +66,7 @@ set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 add_subdirectory(Hazel/vendor/GLFW)
 add_subdirectory(Hazel/vendor/Glad)
+add_subdirectory(Hazel/vendor/imgui)
 
 # =========================
 # Hazel (Shared Library)
@@ -82,6 +83,7 @@ target_link_libraries(Hazel
     PUBLIC
         glfw
         Glad
+        ImGui
         opengl32
 )
 
