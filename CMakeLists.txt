@@ -65,6 +65,7 @@ set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_DOCS OFF CACHE BOOL "" FORCE)
 add_subdirectory(Hazel/vendor/GLFW)
+add_subdirectory(Hazel/vendor/Glad)
 
 # =========================
 # Hazel (Shared Library)
@@ -80,6 +81,7 @@ target_include_directories(Hazel
 target_link_libraries(Hazel
     PUBLIC
         glfw
+        Glad
         opengl32
 )
 
@@ -88,10 +90,13 @@ target_precompile_headers(Hazel PRIVATE
     "${CMAKE_SOURCE_DIR}/Hazel/src/hzpch.h"
 )
 
+# 预定义宏 
+# GLFW_INCLUDE_NONE 使得 GLFW 不会包含任何 OpenGL 头文件，解决重复包含报错
 target_compile_definitions(Hazel
     PRIVATE
         HZ_PLATFORM_WINDOWS
         HZ_BUILD_DLL
+        GLFW_INCLUDE_NONE
         $<$<CONFIG:Debug>:HZ_DEBUG>
         $<$<CONFIG:Release>:HZ_RELEASE>
         $<$<CONFIG:Dist>:HZ_DIST>
