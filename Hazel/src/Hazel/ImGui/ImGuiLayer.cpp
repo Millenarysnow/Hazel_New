@@ -141,6 +141,8 @@ namespace Hazel {
 
     void ImGuiLayer::OnAttach()
     {
+        // ImGui 初始化
+
         ImGui::CreateContext();
         ImGui::StyleColorsDark();
 
@@ -222,12 +224,27 @@ namespace Hazel {
         return false;
     }
 
+    void ImGuiLayer::UpdateKeyModifiers(ImGuiIO& io, ImGuiKey imgui_key, bool pressed)
+    {
+        if (imgui_key == ImGuiKey_LeftCtrl  || imgui_key == ImGuiKey_RightCtrl)
+            io.AddKeyEvent(ImGuiMod_Ctrl, pressed);
+        else if (imgui_key == ImGuiKey_LeftShift || imgui_key == ImGuiKey_RightShift)
+            io.AddKeyEvent(ImGuiMod_Shift, pressed);
+        else if (imgui_key == ImGuiKey_LeftAlt   || imgui_key == ImGuiKey_RightAlt)
+            io.AddKeyEvent(ImGuiMod_Alt, pressed);
+        else if (imgui_key == ImGuiKey_LeftSuper || imgui_key == ImGuiKey_RightSuper)
+            io.AddKeyEvent(ImGuiMod_Super, pressed);
+    }
+
     bool ImGuiLayer::OnKeyPressedEvent(KeyPressedEvent& e)
     {
         ImGuiIO& io = ImGui::GetIO();
         ImGuiKey imgui_key = GLFWKeyToImGuiKey(e.GetKeyCode());
         if (imgui_key != ImGuiKey_None)
+        {
+            UpdateKeyModifiers(io, imgui_key, true);
             io.AddKeyEvent(imgui_key, true);
+        }
 
         return false;
     }
@@ -237,7 +254,10 @@ namespace Hazel {
         ImGuiIO& io = ImGui::GetIO();
         ImGuiKey imgui_key = GLFWKeyToImGuiKey(e.GetKeyCode());
         if (imgui_key != ImGuiKey_None)
+        {
+            UpdateKeyModifiers(io, imgui_key, false);
             io.AddKeyEvent(imgui_key, false);
+        }
 
         return false;
     }

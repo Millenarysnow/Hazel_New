@@ -3,6 +3,9 @@
 #include "Hazel/Layer.h"
 
 
+struct ImGuiIO;
+enum ImGuiKey : int;
+
 namespace Hazel {
 
     class MouseButtonPressedEvent;
@@ -28,6 +31,8 @@ namespace Hazel {
         void OnEvent(Event& event) override;
 
     private:
+        void UpdateKeyModifiers(ImGuiIO& io, ImGuiKey imgui_key, bool pressed);
+        
         bool OnMouseButtonPressedEvent(MouseButtonPressedEvent& e);
         bool OnMouseButtonReleasedEvent(MouseButtonReleasedEvent& e);
         bool OnMouseMovedEvent(MouseMovedEvent& e);
