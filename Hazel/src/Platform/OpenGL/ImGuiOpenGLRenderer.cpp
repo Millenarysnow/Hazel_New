@@ -125,6 +125,7 @@
 #include "imgui.h"
 #ifndef IMGUI_DISABLE
 #include "ImGuiOpenGLRenderer.h"
+#define IMGUI_IMPL_OPENGL_LOADER_CUSTOM
 #include "glad/glad.h"
 #include <stdio.h>
 #include <stdint.h>     // intptr_t
