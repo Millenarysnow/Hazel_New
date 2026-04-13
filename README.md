@@ -1,5 +1,5 @@
 # 环境
-VS2019 / VSCode
+VS2019 / VSCode / Clangd
 
 # 开始
 1. `git pull` 拉取主仓库
@@ -12,5 +12,4 @@ VS2019 / VSCode
 2025/8/31 开始
 
 # 说明
-- 不支持 Clangd，可能会出现 IntelliSense 错误
 - GLAD 生成网站：https://glad.dav1d.de/

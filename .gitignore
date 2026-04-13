@@ -5,6 +5,8 @@ bin/
 bin-int/
 build-vs2019/
 build-vscode/
+build-clangd/
+build-vs2022-clangd-debug/
 build/
 
 *.vcxproj

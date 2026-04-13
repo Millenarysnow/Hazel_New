@@ -1,6 +1,13 @@
 {
   "cmake.configureOnOpen": false,
+  "cmake.preferredGenerators": [
+    "Ninja"
+  ],
+  "cmake.buildDirectory": "${workspaceFolder}/build-clangd",
   "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "clangd.arguments": [
+    "--compile-commands-dir=${workspaceFolder}/build-clangd"
+  ],
   "files.associations": {
     "*.tpp": "cpp",
     "*.inl": "cpp"
