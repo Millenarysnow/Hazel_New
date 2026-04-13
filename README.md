@@ -1,5 +1,7 @@
 # 环境
-VS2019 / VSCode / Clangd
+- VS2019
+- VSCode
+- VS2022 + Clangd
 
 # 开始
 1. `git pull` 拉取主仓库
