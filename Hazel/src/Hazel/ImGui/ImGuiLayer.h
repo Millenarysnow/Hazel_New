@@ -12,6 +12,7 @@ namespace Hazel {
     class KeyPressedEvent;
     class MouseScrolledEvent;
     class MouseMovedEvent;
+    class KeyTypedEvent;
     
     
     class HAZEL_API ImGuiLayer : public Layer
@@ -33,7 +34,7 @@ namespace Hazel {
         bool OnMouseScrollEvent(MouseScrolledEvent& e);
         bool OnKeyPressedEvent(KeyPressedEvent& e);
         bool OnKeyReleasedEvent(KeyReleasedEvent& e);
-        // bool OnKeyTypedEvent(KeyPressedEvent& e);
+        bool OnKeyTypedEvent(KeyTypedEvent& e);
         bool OnWindowsResizedEvent(WindowResizeEvent& e);
 
     private:
