@@ -14,6 +14,8 @@ namespace Hazel {
 	public:
 		static void Init();
 
+		// 返回引用是为了不增加智能指针计数
+		// 使得真正所有权被 Log 实际控制
 		inline static std::shared_ptr<spdlog::logger>& GetCoreLogger() { return s_CoreLogger; }
 		inline static std::shared_ptr<spdlog::logger>& GetClientLogger() { return s_ClientLogger; }
 
